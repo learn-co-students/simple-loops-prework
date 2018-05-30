@@ -1,4 +1,4 @@
-learn# REMEMBER: print your output to the terminal using 'puts'
+require "pry"
 #1
 def loop_iterator(number_of_times)
   # Code your solution here using the "loop" keyword to puts out the below phrase
@@ -9,23 +9,20 @@ def loop_iterator(number_of_times)
   # Maybe we should keep count of the number of times we've puts out the 
   #  phrase and break when the counter hits the appropriate number...
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  counter = 0 
+  counter = 0
   loop do
-    counter +=1
     puts phrase
-    if counter >=10 
-      break
-    end
+     counter += 1
+   break if counter == number_of_times
   end
 end  
   
 #2 X
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
-   
-	10.times do
-		puts phrase
   phrase = "Welcome to Flatiron School's Web Development Course!"
+	number_of_times.times do
+		puts phrase
   end
 end
 
@@ -33,23 +30,24 @@ end
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
-  number_of_times =0
-  while number_of_times< 10
-  puts phrase
-  number_of_times+=1 
+  count = 1 
+  while count <= number_of_times
   phrase = "Welcome to Flatiron School's Web Development Course!"
+  puts phrase
+  count += 1 
   end
 end
 
 #4 X
+
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
-  number_of_times =0
-  until number_of_times == 10
-  puts phrase
-  number_of_times  +=1 
   phrase = "Welcome to Flatiron School's Web Development Course!"
+  count = 1
+  until count > number_of_times
+    puts phrase
+    count += 1 
   end
 end
   
@@ -58,8 +56,7 @@ def for_iterator(number_of_times)
   # code your solution here using the "for" keyword
   # remember that `for` requires a range of numbers. How can we turn our number into a range?
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  for counter in 1..10 do
-  puts phrase
-  number_of_times+=1 
+  for count in (1..number_of_times) do
+    puts phrase
   end
 end
