@@ -3,10 +3,9 @@ def loop_iterator(number_of_times)
   loop do 
     puts "Welcome to Flatiron School's Web Development Course!"
   counter += 1
-  if counter > number_of_times
-    break
+  break if counter == number_of_times
   end
- 
+end  
 
 def loop_iterator(number_of_times)
   counter = 0
