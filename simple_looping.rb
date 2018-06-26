@@ -6,8 +6,7 @@ def loop_iterator(number_of_times)
   break if counter >= number_of_times
   end
 end  
-
-
+lear
 def loop_iterator(number_of_times)
   counter = 0
   loop do 
@@ -40,7 +39,6 @@ def until_iterator(number_of_times)
   end
 end
 
-
 def for_iterator(number_of_times)
   number_of_times = 1..number_of_times
   for time in number_of_times do
@@ -48,4 +46,4 @@ def for_iterator(number_of_times)
   end  
 end 
   
-
+end
