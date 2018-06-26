@@ -3,7 +3,7 @@ def loop_iterator(number_of_times)
   loop do 
     puts "Welcome to Flatiron School's Web Development Course!"
     counter += 1
-  break if counter >= number_of_times
+  break if counter == number_of_times
   end
 end  
 
@@ -35,7 +35,7 @@ def until_iterator(number_of_times)
   counter = 0
   puts "Welcome to Flatiron School's Web Development Course!"
   counter += 1
-  until interation == number_of_times
+  until counter == number_of_times
   end
 end
 
