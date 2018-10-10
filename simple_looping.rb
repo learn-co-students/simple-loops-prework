@@ -32,7 +32,7 @@ while_iterator(7)
 def until_iterator(number_of_times)
   count = 0
   until count == number_of_times
-  puts "Welcome to Flatiron School's Web Development Course!"
+    puts "Welcome to Flatiron School's Web Development Course!"
   count += 1
   end
 end
@@ -42,11 +42,7 @@ until_iterator (7)
 def for_iterator(number_of_times)
   range = 1..number_of_times
   for num in range
-
-  # code your solution here using the "for" keyword
-  # remember that `for` requires a range of numbers. How can we turn our number into a range?
-
-  puts "Welcome to Flatiron School's Web Development Course!"
-
+    puts "Welcome to Flatiron School's Web Development Course!"
+  end
 end
-end
+for_iterator(7)
