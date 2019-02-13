@@ -34,7 +34,7 @@ def until_iterator(number_of_times)
 end
 
 def for_iterator(number_of_times)
-  for i = 0; i < number_of_times; i+= 1 
+  for iteration in 
    puts  "Welcome to Flatiron School's Web Development Course!"
   end
 end
