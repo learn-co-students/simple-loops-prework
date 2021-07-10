@@ -9,7 +9,7 @@
 
 ##### RSpec — A Closer Look:
 
-Take a look at your `spec/simple_looping_spec.rb` file. You'll notice on line 4 that there is a `before(:each) do` statement. What is this? This is what's called a [`before` hook](https://relishapp.com/rspec/rspec-core/v/2-2/docs/hooks/before-and-after-hooks). What this is doing is taking the code that is inside the `before` hook's block and executing it at the start of each test (denoted by the `it` keyword). For example, this:
+Take a look at your `spec/simple_looping_spec.rb` file. You'll notice on line 4 that there is a `before(:each) do` statement. What is this? This is what's called a [`before` hook](https://relishapp.com/rspec/rspec-core/v/2-2/docs/hooks/before-and-afhttps://learn.co/tracks/web-development-fundamentals/intro-to-ruby/looping/simple-loops#ter-hooks). What this is doing is taking the code that is inside the `before` hook's block and executing it at the start of each test (denoted by the `it` keyword). For example, this:
 
 ```ruby
 it "prints out some witty statement from the 1990's" do
